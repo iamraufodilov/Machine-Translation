@@ -65,6 +65,7 @@ for target in lines.target:
     for word in target.split():
         if word not in all_target_words:
             all_target_words.add(word)
+
 # sort all unique source and target words
 source_words= sorted(list(all_source_words))
 target_words=sorted(list(all_target_words))
@@ -269,5 +270,9 @@ print('Predicted Target Translation:', decoded_sentence[:-4])
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # CONCLUSION
 '''
-
+in this project we created neural machine translation model
+first we load dataset and clean it from spaces, digits, special characters
+then we create decoder and encoder pipelines
+then we created model with two encoding and decoding pipelines
+in the last we created function to translate random input text to desired language
 '''
