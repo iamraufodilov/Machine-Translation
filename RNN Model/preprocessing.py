@@ -58,7 +58,7 @@ text_sentences = [
     'This is a short sentence .']
 
 text_tokenized, text_tokenizer = tokenize(text_sentences)
-print(text_tokenizer.word_index)
+#_>print(text_tokenizer.word_index)
 
 for sample_i, (sent, token_sent) in enumerate(zip(text_sentences, text_tokenized)):
     print('Sequence {} in x'.format(sample_i + 1))
